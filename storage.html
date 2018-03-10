@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Storage Management</title>
+</head>
+<style>
+    .space{width:150px; height:640px; position:absolute; background:#FFFFFF;}
+</style>
+<body style="background:#ACD6FF;">
+<!--标题-->
+<h1 style="position:absolute; left:250px; top:50px;">首次适应算法</h1>
+<h1 style="position:absolute; left:850px; top:50px;">最佳适应算法</h1>
+
+<!--内存空间-->
+<div id="x" class="space" style="left:50px; top:50px;"></div>
+<div id="y" class="space" style="left:650px; top:50px;"></div>
+
+<h5 style="position:absolute; left:250px; top:180px;">输入该请求所占用的内存</h5>
+<h5 style="position:absolute; left:250px; top:280px;">请输入要删除任务的序号</h5>
+<h5 style="position:absolute; left:850px; top:180px;">输入该请求所占用的内存</h5>
+<h5 style="position:absolute; left:850px; top:280px;">请输入要删除任务的序号</h5>
+
+<!--首次适应算法的输入部分和按钮-->
+<input type="text" id="size_1" value="0" style="position:absolute; left:400px; top:200px;">
+<input type="text" id="free_number_1" value="0" style="position:absolute; left:400px; top:300px;">
+<input type="button" id="add_mission_1" value="添加该任务" style="position:absolute; left:250px; top:250px;"
+       onclick="add_1();">
+<input type="button" id="free_space_1" value="删除该任务" style="position:absolute; left:250px; top:350px;"
+       onclick="remove_mission(1);">
+
+<!--最佳适应算法的输入部分和按钮-->
+<input type="text" id="size_2" value="0" style="position:absolute; left:1000px; top:200px;">
+<input type="text" id="free_number_2" value="0" style="position:absolute; left:1000px; top:300px;">
+<input type="button" id="add_mission_2" value="添加该任务" style="position:absolute; left:850px; top:250px;"
+       onclick="add_2();">
+<input type="button" id="free_space_2" value="删除该任务" style="position:absolute; left:850px; top:350px;"
+       onclick="remove_mission(2);">
+
+<script type="text/javascript" src="storage.js"></script>
+</body>
+</html>
